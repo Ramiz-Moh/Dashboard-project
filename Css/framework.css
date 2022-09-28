@@ -21,6 +21,20 @@
     justify-content: space-between;
 }
 
+.d-grid {
+    display: grid;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+@media (max-width: 767px) {
+    .block-mobile {
+        display: block;
+    }
+}
+
 /* End Box */
 
 /* Start Padding and Margin */
@@ -175,6 +189,12 @@
     text-align: center;
 }
 
+@media (max-width: 767px) {
+    .txt-c-mobile {
+        text-align: center;
+    }
+}
+
 .fs-14 {
     font-size: 14px;
 }
@@ -186,6 +206,10 @@
 
 .rad-6 {
     border-radius: 6px;
+}
+
+.rad-10 {
+    border-radius: 10px;
 }
 
 /* End Border */
