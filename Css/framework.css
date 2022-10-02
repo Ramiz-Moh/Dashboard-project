@@ -268,6 +268,10 @@
     font-size: 14px;
 }
 
+.fs-15 {
+    font-size: 15px;
+}
+
 .fs-18 {
     font-size: 18px;
 }
@@ -289,6 +293,10 @@
     border-radius: 10px;
 }
 
+.b-none {
+    border: none;
+}
+
 /* End Border */
 
 /* Start Width and Height */
@@ -307,6 +315,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.btn-shape {
+    padding: 4px 10px;
+    border-radius: 6px;
 }
 
 /* End Components */

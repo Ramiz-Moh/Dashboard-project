@@ -287,3 +287,22 @@ ul {
 }
 
 /* End Welcome */
+
+/* Start quick draft */
+.quick-draft textarea {
+    resize: none;
+    min-height: 180px;
+}
+
+.quick-draft .save {
+    margin-left: auto;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.quick-draft .save:hover {
+    background-color: var(--blue-alt-color);
+}
+
+
+/* End quick draft */
