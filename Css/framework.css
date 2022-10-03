@@ -25,6 +25,10 @@
     flex-direction: column;
 }
 
+.f-wrap {
+    flex-wrap: wrap;
+}
+
 .d-grid {
     display: grid;
 }
@@ -214,6 +218,26 @@
     margin-left: 20px;
 }
 
+.m-30 {
+    margin: 30px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.ml-30 {
+    margin-left: 30px;
+}
+
 /* End Padding and Margin */
 
 /* Start Position */
@@ -273,6 +297,10 @@
     color: var(--green-color);
 }
 
+.c-red {
+    color: var(--red-color);
+}
+
 /* End Colors */
 
 
@@ -305,6 +333,14 @@
 
 .fs-19 {
     font-size: 19px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-25 {
+    font-size: 25px;
 }
 
 .fw-400 {

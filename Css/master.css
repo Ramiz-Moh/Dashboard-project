@@ -374,3 +374,19 @@ ul {
 }
 
 /* End Yearly Targets */
+
+
+/* Start Tickets Statistics */
+
+.ticketes-statistics div .box {
+    border: 1px solid #ccc;
+    width: calc(50% - 10px);
+}
+
+@media (max-width:767px) {
+    .ticketes-statistics div .box {
+        width: 100%
+    }
+}
+
+/* End Tickets Statistics */
