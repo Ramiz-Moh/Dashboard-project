@@ -14,7 +14,6 @@
 
 .align-center {
     align-items: center;
-
 }
 
 .space-between {
@@ -325,6 +324,10 @@
 
 .fs-15 {
     font-size: 15px;
+}
+
+.fs-16 {
+    font-size: 16px;
 }
 
 .fs-18 {
