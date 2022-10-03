@@ -21,6 +21,9 @@
     justify-content: space-between;
 }
 
+.flex-column {
+    flex-direction: column;
+}
 
 .d-grid {
     display: grid;
@@ -28,6 +31,10 @@
 
 .gap-20 {
     gap: 20px;
+}
+
+.gap-15 {
+    gap: 15px;
 }
 
 @media (max-width: 767px) {
@@ -234,6 +241,14 @@
     background: var(--blue-color);
 }
 
+.bg-orange {
+    background: var(--orange-color);
+}
+
+.bg-green {
+    background: var(--green-color);
+}
+
 .c-black {
     color: black;
 }
@@ -244,6 +259,18 @@
 
 .c-white {
     color: white;
+}
+
+.c-blue {
+    color: var(--blue-color);
+}
+
+.c-orange {
+    color: var(--orange-color);
+}
+
+.c-green {
+    color: var(--green-color);
 }
 
 /* End Colors */
@@ -278,6 +305,14 @@
 
 .fs-19 {
     font-size: 19px;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-bold {
+    font-weight: bold;
 }
 
 /* End Font */
@@ -315,6 +350,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-shape {
