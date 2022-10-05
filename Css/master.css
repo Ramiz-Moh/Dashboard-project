@@ -427,3 +427,18 @@ ul {
 }
 
 /* End Latest News */
+
+/* Start Latest Tasks */
+.tasks .tasks-row:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+}
+
+.tasks .tasks-row.done {
+    opacity: 0.3;
+}
+
+.tasks .tasks-row.done .info {
+    text-decoration: line-through;
+}
+
+/* End Latest Tasks */
