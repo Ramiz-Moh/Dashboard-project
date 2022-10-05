@@ -502,6 +502,57 @@ ul {
 
 /* End Last Project Progress */
 
+/* Start Remainders */
+
+.reminders ul li {
+    border-left: 2px solid;
+}
+
+.reminders ul li.blue {
+    border-color: var(--blue-color);
+}
+
+.reminders ul li.green {
+    border-color: var(--green-color);
+}
+
+.reminders ul li.orange {
+    border-color: var(--orange-color);
+}
+
+.reminders ul li.red {
+    border-color: var(--red-color);
+}
+
+.reminders ul li:before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+
+}
+
+.reminders ul li.blue:before {
+    background: var(--blue-color);
+}
+
+.reminders ul li.green:before {
+    background: var(--green-color);
+}
+
+.reminders ul li.orange:before {
+    background: var(--orange-color);
+}
+
+.reminders ul li.red:before {
+    background: var(--red-color);
+}
+
+/* End Remainders */
 
 /* Start Animation  */
 @keyframes progressing {
