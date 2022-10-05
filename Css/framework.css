@@ -320,12 +320,24 @@
     color: var(--red-color);
 }
 
+.c-ccc {
+    color: #ccc;
+}
+
 /* End Colors */
 
 
 /* Start Font */
 .txt-c {
     text-align: center;
+}
+
+.txt-l {
+    text-align: left;
+}
+
+.txt-r {
+    text-align: right;
 }
 
 @media (max-width: 767px) {
