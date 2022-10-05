@@ -137,6 +137,26 @@
     padding-left: 20px;
 }
 
+.p-25 {
+    padding: 25px;
+}
+
+.pt-25 {
+    padding-top: 25px;
+}
+
+.pr-25 {
+    padding-right: 25px;
+}
+
+.pb-25 {
+    padding-bottom: 25px;
+}
+
+.pl-25 {
+    padding-left: 25px;
+}
+
 .m-0 {
     margin: 0px;
 }
@@ -235,6 +255,26 @@
 
 .ml-20 {
     margin-left: 20px;
+}
+
+.m-25 {
+    margin: 25px;
+}
+
+.mt-25 {
+    margin-top: 25px;
+}
+
+.mr-25 {
+    margin-right: 25px;
+}
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+.ml-25 {
+    margin-left: 25px;
 }
 
 .m-30 {
