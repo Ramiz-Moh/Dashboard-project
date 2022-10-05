@@ -442,3 +442,21 @@ ul {
 }
 
 /* End Latest Tasks */
+
+/* Start Latest Uploads */
+.uploads .uploads-row:not(:last-of-type) {
+    border-bottom: 1px solid #ddd;
+}
+
+.uploads .uploads-row img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.uploads .uploads-row .info {
+    flex-grow: 1;
+}
+
+
+
+/* Etart Latest Uploads */
