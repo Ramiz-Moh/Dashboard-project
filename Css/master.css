@@ -218,7 +218,6 @@ ul {
 
 .wrapper {
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    margin-bottom: 30px;
 }
 
 @media (max-width: 767px) {
@@ -634,7 +633,40 @@ ul {
 }
 
 /* End Social Media */
+.projects table,
+.projects table tr td {
+    border: 1px solid #eee;
+    border-collapse: collapse;
+}
 
+.projects table tbody img {
+    width: 35px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.projects table tbody img:not(:first-child) {
+    margin-left: -17px;
+}
+
+/* .projects table .pending {
+    background-color: var(--orange-color);
+}
+
+.projects table .inprogress {
+
+}
+
+.projects table .complete {}
+
+.projects table .rejecte {} */
+
+/* Start Project */
+
+
+
+
+/* End Project */
 
 /* Start Animation  */
 @keyframes progressing {

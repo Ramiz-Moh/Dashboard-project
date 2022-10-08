@@ -332,6 +332,10 @@
     background: var(--green-color);
 }
 
+.bg-red {
+    background: var(--red-color);
+}
+
 .c-black {
     color: black;
 }
