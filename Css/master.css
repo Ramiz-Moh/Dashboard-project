@@ -574,6 +574,68 @@ ul {
 }
 
 /* End Latest Post */
+
+/* Start Social Media */
+
+.social-media .box {
+    padding-left: 70px;
+}
+
+.social-media .box svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 52px;
+    transition: 0.3s;
+}
+
+.social-media .box svg:hover {
+    transform: rotate(5deg);
+}
+
+.social-media .twitter {
+    background: rgb(29 161 242 / 20%);
+    color: #1da1f2;
+}
+
+.social-media .twitter svg,
+.social-media .twitter a {
+    background: #1da1f2;
+}
+
+.social-media .facebook {
+    background: rgb(24 119 242 / 20%);
+    color: #1877f2;
+}
+
+.social-media .facebook svg,
+.social-media .facebook a {
+    background: #1877f2;
+}
+
+.social-media .youtube {
+    background: rgb(255 0 0 / 20%);
+    color: #ff0000;
+}
+
+.social-media .youtube svg,
+.social-media .youtube a {
+    background: #ff0000;
+}
+
+.social-media .linkedin {
+    background: rgb(0 119 181 / 20%);
+    color: #0077b5;
+}
+
+.social-media .linkedin svg,
+.social-media .linkedin a {
+    background: #0077b5
+}
+
+/* End Social Media */
+
+
 /* Start Animation  */
 @keyframes progressing {
     from {
