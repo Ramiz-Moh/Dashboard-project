@@ -633,6 +633,9 @@ ul {
 }
 
 /* End Social Media */
+
+/* Start Project */
+
 .projects table,
 .projects table tr td {
     border: 1px solid #eee;
@@ -649,24 +652,95 @@ ul {
     margin-left: -17px;
 }
 
-/* .projects table .pending {
-    background-color: var(--orange-color);
-}
-
-.projects table .inprogress {
-
-}
-
-.projects table .complete {}
-
-.projects table .rejecte {} */
-
-/* Start Project */
-
-
-
-
 /* End Project */
+
+/* Start Settings Control */
+
+.site-control textarea {
+    height: 150px;
+    resize: none;
+    border-color: #ccc;
+    border-radius: 6px;
+}
+
+/* End Settings Control */
+
+/* Start General Info */
+
+.general-info form input {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.general-info form input:disabled {
+    background-color: #F0F4F8;
+    width: 83%;
+}
+
+.general-info form input:disabled::placeholder {
+    color: #ccc;
+}
+
+.general-info form button {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.general-info form button:hover {
+    background: var(--blue-color);
+    color: white;
+}
+
+/* End General Info */
+
+
+
+/* Start  Switch Toggle*/
+
+.toggle-checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.toggle-switch {
+    width: 78px;
+    height: 32px;
+    position: relative;
+    background: #ccc;
+    border-radius: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.toggle-switch::before {
+    content: "\f00d";
+    font-family: var(--fa-style-family-classic);
+    font-weight: 900;
+    width: 24px;
+    height: 24px;
+    background: white;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    color: #aaa;
+}
+
+.toggle-checkbox:checked+.toggle-switch {
+    background: var(--blue-color);
+}
+
+.toggle-checkbox:checked+.toggle-switch::before {
+    content: "\f00c";
+    color: var(--blue-color);
+    left: 50px;
+}
+
+/* End  Switch Toggle*/
 
 /* Start Animation  */
 @keyframes progressing {
