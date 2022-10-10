@@ -693,7 +693,12 @@ ul {
 
 /* End General Info */
 
+/* Start Security Info */
+.security-info .box:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+}
 
+/* End Security Info */
 
 /* Start  Switch Toggle*/
 
