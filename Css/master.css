@@ -674,7 +674,7 @@ ul {
 
 .general-info form input:disabled {
     background-color: #F0F4F8;
-    width: 83%;
+    width: 80%;
 }
 
 .general-info form input:disabled::placeholder {
@@ -699,6 +699,26 @@ ul {
 }
 
 /* End Security Info */
+
+/* Start Social Media */
+.Social-info div {
+    border: 1px solid #ccc;
+    background: #F6F6F6;
+    overflow: hidden;
+    padding-left: 50px;
+}
+
+.Social-info div svg {
+    position: absolute;
+    border-right: 1px solid #ccc;
+    width: 20px;
+    padding: 10px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+/* End Social Media */
 
 /* Start  Switch Toggle*/
 
