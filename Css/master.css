@@ -720,7 +720,61 @@ ul {
 
 /* End Social Media */
 
-/* Start  Switch Toggle*/
+/* Start Widgets Control */
+.widgets-control .form-control input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.widgets-control .form-control label {
+    padding-left: 30px;
+    position: relative;
+}
+
+.widgets-control .form-control label::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid var(--grey-color);
+    border-radius: 3px;
+}
+
+.widgets-control .form-control label:hover:before {
+    border-color: var(--blue-color);
+}
+
+.widgets-control .form-control label::after {
+    content: "\f00c";
+    font-family: var(--fa-style-family-classic);
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background: var(--blue-color);
+    color: white;
+    font-size: 10px;
+    border-radius: 3px;
+    transform: translateY(-50%) scale(0) rotate(360deg);
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.widgets-control .form-control input[type="checkbox"]:checked+label::after {
+    transform: translateY(-50%) scale(1);
+
+}
+
+/* End Widgets Control */
+
+/* Start Switch Toggle*/
 
 .toggle-checkbox {
     -webkit-appearance: none;
