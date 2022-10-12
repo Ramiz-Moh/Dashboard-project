@@ -633,6 +633,9 @@ ul {
 }
 
 /* End Social Media */
+
+/* Start Project */
+
 .projects table,
 .projects table tr td {
     border: 1px solid #eee;
@@ -649,24 +652,257 @@ ul {
     margin-left: -17px;
 }
 
-/* .projects table .pending {
-    background-color: var(--orange-color);
-}
-
-.projects table .inprogress {
-
-}
-
-.projects table .complete {}
-
-.projects table .rejecte {} */
-
-/* Start Project */
-
-
-
-
 /* End Project */
+
+/* Start Settings Control */
+
+.site-control textarea {
+    height: 150px;
+    resize: none;
+    border-color: #ccc;
+    border-radius: 6px;
+}
+
+/* End Settings Control */
+
+/* Start General Info */
+
+.general-info form input {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.general-info form input:disabled {
+    background-color: #F0F4F8;
+    width: 80%;
+}
+
+.general-info form input:disabled::placeholder {
+    color: #ccc;
+}
+
+.general-info form button {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.general-info form button:hover {
+    background: var(--blue-color);
+    color: white;
+}
+
+/* End General Info */
+
+/* Start Security Info */
+.security-info .box:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+}
+
+/* End Security Info */
+
+/* Start Social Media */
+.Social-info div {
+    border: 1px solid #ccc;
+    background: #F6F6F6;
+    overflow: hidden;
+    padding-left: 50px;
+}
+
+.Social-info div svg {
+    position: absolute;
+    border-right: 1px solid #ccc;
+    width: 20px;
+    padding: 10px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+/* End Social Media */
+
+/* Start Widgets Control */
+.widgets-control .form-control input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.widgets-control .form-control label {
+    padding-left: 30px;
+    position: relative;
+}
+
+.widgets-control .form-control label::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid var(--grey-color);
+    border-radius: 3px;
+}
+
+.widgets-control .form-control label:hover:before {
+    border-color: var(--blue-color);
+}
+
+.widgets-control .form-control label::after {
+    content: "\f00c";
+    font-family: var(--fa-style-family-classic);
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background: var(--blue-color);
+    color: white;
+    font-size: 10px;
+    border-radius: 3px;
+    transform: translateY(-50%) scale(0) rotate(360deg);
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.widgets-control .form-control input[type="checkbox"]:checked+label::after {
+    transform: translateY(-50%) scale(1);
+
+}
+
+/* End Widgets Control */
+
+/* Start Backup Manager  */
+
+.backup-manager input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.backup-manager .form-control label {
+    padding-left: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.backup-manager .form-control label::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--grey-color);
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+
+.backup-manager .form-control label:hover::before {
+    border-color: var(--blue-color);
+}
+
+.backup-manager .form-control label::after {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: 3px;
+    top: 50%;
+    background: var(--blue-color);
+    border-radius: 50%;
+    transform: translateY(-50%) scale(0);
+    transition: 0.3s;
+}
+
+.backup-manager .form-control input[type="radio"]:checked+label::before {
+    border-color: var(--blue-color);
+}
+
+.backup-manager .form-control input[type="radio"]:checked+label::after {
+    transform: translateY(-50%) scale(1);
+}
+
+.backup-manager .servers {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+@media (max-width:767px) {
+    .backup-manager .servers {
+        flex-wrap: wrap;
+    }
+}
+
+.backup-manager .servers .server {
+    border: 2px solid #eee;
+    transition: 0.3s;
+}
+
+.backup-manager .servers .server label {
+    cursor: pointer;
+}
+
+.backup-manager .servers .server label svg {
+    margin: 0 auto 10px;
+}
+
+.backup-manager input[type="radio"]:checked+.server {
+    border-color: var(--blue-color);
+    color: var(--blue-color);
+}
+
+
+/* End Backup Manager  */
+
+/* Start Switch Toggle*/
+
+.toggle-checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.toggle-switch {
+    width: 78px;
+    height: 32px;
+    position: relative;
+    background: #ccc;
+    border-radius: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.toggle-switch::before {
+    content: "\f00d";
+    font-family: var(--fa-style-family-classic);
+    font-weight: 900;
+    width: 24px;
+    height: 24px;
+    background: white;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    color: #aaa;
+}
+
+.toggle-checkbox:checked+.toggle-switch {
+    background: var(--blue-color);
+}
+
+.toggle-checkbox:checked+.toggle-switch::before {
+    content: "\f00c";
+    color: var(--blue-color);
+    left: 50px;
+}
+
+/* End  Switch Toggle*/
 
 /* Start Animation  */
 @keyframes progressing {
