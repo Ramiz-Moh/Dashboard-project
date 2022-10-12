@@ -739,7 +739,7 @@ ul {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    border: 1px solid var(--grey-color);
+    border: 2px solid var(--grey-color);
     border-radius: 3px;
 }
 
@@ -754,8 +754,8 @@ ul {
     position: absolute;
     top: 50%;
     left: 0;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     background: var(--blue-color);
     color: white;
     font-size: 10px;
@@ -773,6 +773,89 @@ ul {
 }
 
 /* End Widgets Control */
+
+/* Start Backup Manager  */
+
+.backup-manager input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.backup-manager .form-control label {
+    padding-left: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.backup-manager .form-control label::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--grey-color);
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+
+.backup-manager .form-control label:hover::before {
+    border-color: var(--blue-color);
+}
+
+.backup-manager .form-control label::after {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: 3px;
+    top: 50%;
+    background: var(--blue-color);
+    border-radius: 50%;
+    transform: translateY(-50%) scale(0);
+    transition: 0.3s;
+}
+
+.backup-manager .form-control input[type="radio"]:checked+label::before {
+    border-color: var(--blue-color);
+}
+
+.backup-manager .form-control input[type="radio"]:checked+label::after {
+    transform: translateY(-50%) scale(1);
+}
+
+.backup-manager .servers {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+@media (max-width:767px) {
+    .backup-manager .servers {
+        flex-wrap: wrap;
+    }
+}
+
+.backup-manager .servers .server {
+    border: 2px solid #eee;
+    transition: 0.3s;
+}
+
+.backup-manager .servers .server label {
+    cursor: pointer;
+}
+
+.backup-manager .servers .server label svg {
+    margin: 0 auto 10px;
+}
+
+.backup-manager input[type="radio"]:checked+.server {
+    border-color: var(--blue-color);
+    color: var(--blue-color);
+}
+
+
+/* End Backup Manager  */
 
 /* Start Switch Toggle*/
 

@@ -97,7 +97,7 @@
                 <!-- Start General Info -->
                 <div class="general-info p-20 bg-white rad-10">
                     <h2 class="mt-0 mb-10">General Info</h2>
-                    <p class="mt-10 mb-20 fs-15 c-grey">General Information About your Account</p>
+                    <p class="mt-0 mb-20 fs-15 c-grey">General Information About your Account</p>
                     <form>
                         <div class="form-group">
                             <label class="d-block c-grey fs-14" for="firstName">First Name</label>
@@ -118,7 +118,7 @@
                 <!-- Start Security Info -->
                 <div class="security-info p-20 bg-white rad-10">
                     <h2 class="mt-0 mb-10">Security Info</h2>
-                    <p class="mt-10 mb-20 fs-15 c-grey">Security Information About Your Account</p>
+                    <p class="mt-0 mb-20 fs-15 c-grey">Security Information About Your Account</p>
                     <div class="box between-flex pb-20 ">
                         <div class="info">
                             <span class="d-block mb-5">Password</span>
@@ -148,7 +148,7 @@
                 <!-- Start Social Info -->
                 <div class="Social-info p-20 bg-white rad-10">
                     <h2 class="mt-0 mb-10">Social Media</h2>
-                    <p class="mt-10 mb-20 fs-15 c-grey">Social Media Information</p>
+                    <p class="mt-0 mb-20 fs-15 c-grey">Social Media Information</p>
                     <div class="p-relative w-full rad-6 p-10 fs-13 c-grey">
                         <i class="fa-brands fa-twitter fa-lg"></i>
                         Twitter Username
@@ -170,22 +170,22 @@
                 <!-- Start Widgets Control -->
                 <div class="widgets-control p-20 bg-white rad-10">
                     <h2 class="mt-0 mb-10">Widgets Control</h2>
-                    <p class="mt-10 mb-20 c-grey fs-15">Show/Hide Widgets</p>
+                    <p class="mt-0 mb-20 c-grey fs-15">Show/Hide Widgets</p>
                     <form>
                         <div class="form-control d-flex align-center mb-15">
-                            <input type="checkbox" id="quickDraft">
+                            <input type="checkbox" id="quickDraft" checked>
                             <label for="quickDraft">Quick Draft</label>
                         </div>
                         <div class="form-control d-flex align-center mb-15">
-                            <input type="checkbox" id="yearlyTargets">
+                            <input type="checkbox" id="yearlyTargets" checked>
                             <label for="yearlyTargets">Yearly Targets</label>
                         </div>
                         <div class="form-control d-flex align-center mb-15">
-                            <input type="checkbox" id="ticketsStatistics">
+                            <input type="checkbox" id="ticketsStatistics" checked>
                             <label for="ticketsStatistics">Tickets Statistics</label>
                         </div>
                         <div class="form-control d-flex align-center mb-15">
-                            <input type="checkbox" id="latestNews">
+                            <input type="checkbox" id="latestNews" checked>
                             <label for="latestNews">Latest News</label>
                         </div>
                         <div class="form-control d-flex align-center mb-15">
@@ -193,12 +193,55 @@
                             <label for="latesTasks">Lates Tasks</label>
                         </div>
                         <div class="form-control d-flex align-center mb-15">
-                            <input type="checkbox" id="topSearchItems">
+                            <input type="checkbox" id="topSearchItems" checked>
                             <label for="topSearchItems">Top Search Items</label>
                         </div>
                     </form>
                 </div>
                 <!-- End Widgets Control -->
+                <!-- Start Backup Manager -->
+                <div class="backup-manager p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-10">Backup Manager</h2>
+                    <p class="mt-0 mb-20 c-grey fs-15">Control Backup Time And Location</p>
+                    <form>
+                        <div class="form-control d-flex align-center mb-15">
+                            <input type="radio" id="daily" name="backup" checked>
+                            <label for="daily">Daily</label>
+                        </div>
+                        <div class="form-control d-flex align-center mb-15">
+                            <input type="radio" id="weekly" name="backup">
+                            <label for="weekly">Weekly</label>
+                        </div>
+                        <div class="form-control d-flex align-center mb-15">
+                            <input type="radio" id="monthly" name="backup">
+                            <label for="monthly">Monthly</label>
+                        </div>
+                    </form>
+                    <div class="servers d-flex align-center txt-c">
+                        <input type="radio" name="server" id="megaman">
+                        <div class="server mb-15 rad-10 w-full">
+                            <label class="d-block m-15" for="megaman">
+                                <i class="fa-solid fa-server d-block mb-10"></i>
+                                Megaman
+                            </label>
+                        </div>
+                        <input type="radio" name="server" id="zero" checked>
+                        <div class="server mb-15 rad-10 w-full">
+                            <label class="d-block m-15" for="zero">
+                                <i class="fa-solid fa-server d-block mb-10"></i>
+                                Zero
+                            </label>
+                        </div>
+                        <input type="radio" name="server" id="sigma">
+                        <div class="server mb-15 rad-10 w-full">
+                            <label class="d-block m-15" for="sigma">
+                                <i class="fa-solid fa-server d-block mb-10 "></i>
+                                Sigma
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Backup Manager -->
             </div>
             <!-- End Wrapper -->
         </div>
