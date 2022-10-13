@@ -936,10 +936,22 @@ ul {
     display: none;
 }
 
+
+.profile-page .details {
+    flex-wrap: wrap;
+}
+
+
 /* Start My Skills */
 
 .my-skills {
     width: 550px;
+}
+
+@media (max-width: 1260px) {
+    .my-skills {
+        flex-grow: 1;
+    }
 }
 
 .my-skills ul:not(:last-child) {
@@ -963,11 +975,7 @@ ul {
     margin-right: 10px;
 }
 
-
-
 /* End My Skills */
-
-
 
 /* End Profile */
 
