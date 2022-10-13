@@ -32,13 +32,19 @@
     display: grid;
 }
 
-.gap-20 {
-    gap: 20px;
+.gap-5 {
+    gap: 5px;
 }
 
 .gap-15 {
     gap: 15px;
 }
+
+.gap-20 {
+    gap: 20px;
+}
+
+
 
 @media (max-width: 767px) {
     .block-mobile {
@@ -155,6 +161,26 @@
 
 .pl-25 {
     padding-left: 25px;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.pr-30 {
+    padding-right: 30px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.pl-30 {
+    padding-left: 30px;
 }
 
 .m-0 {
@@ -449,6 +475,10 @@
 
 .rad-10 {
     border-radius: 10px;
+}
+
+.rad-half {
+    border-radius: 50%;
 }
 
 .b-none {
