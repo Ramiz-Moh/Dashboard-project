@@ -857,6 +857,87 @@ ul {
 
 /* End Backup Manager  */
 
+/* Start Profile */
+
+@media (max-width:767px) {
+    .profile-page .overview {
+        flex-direction: column;
+    }
+}
+
+.profile-page .avatar-box {
+    width: 300px;
+}
+
+@media (min-width:768px) {
+    .profile-page .avatar-box {
+        border-right: 1px solid #eee;
+    }
+}
+
+.profile-page .avatar-box>img {
+    width: 120px;
+}
+
+.profile-page .avatar-box .progress {
+    height: 6px;
+    overflow: hidden;
+    margin: auto;
+    width: 70%;
+}
+
+.profile-page .avatar-box .progress span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: var(--blue-color);
+    border-radius: 6px;
+}
+
+.profile-page .info-box .box {
+    flex-wrap: wrap;
+    transition: 0.3s;
+}
+
+.profile-page .info-box .box:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+}
+
+.profile-page .info-box .box:hover {
+    background-color: #f9f9f9;
+}
+
+.profile-page .info-box .box h4 {
+    font-weight: normal;
+}
+
+.profile-page .info-box .box>div {
+    min-width: 250px;
+    padding: 10px 0 0;
+}
+
+.profile-page .info-box .box>div .toggle-switch {
+    width: 80px;
+    height: 22px;
+}
+
+.profile-page .info-box .box>div .toggle-switch::before {
+    width: 16px;
+    height: 16px;
+    top: 3px;
+}
+
+.profile-page .info-box .box>div input:checked+.toggle-switch::before {
+    left: 60px;
+}
+
+.profile-page .info-box .box>div input {
+    display: none;
+}
+
+/* End Profile */
+
 /* Start Switch Toggle*/
 
 .toggle-checkbox {
