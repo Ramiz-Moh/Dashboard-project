@@ -936,7 +936,28 @@ ul {
     display: none;
 }
 
+/* Start My Skills */
+
+.my-skills {
+    width: 550px;
+}
+
+.my-skills ul:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.my-skills ul ul li:not(:last-of-type) {
+    border-bottom: 1px solid rgb(204 204 204 / 20%)
+}
+
+
+/* End My Skills */
+
+
+
 /* End Profile */
+
+
 
 /* Start Switch Toggle*/
 
