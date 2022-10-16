@@ -1028,6 +1028,52 @@ ul {
 
 /* End Project Page */
 
+/* Start Courses Page */
+
+.wrapper-two {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+@media (max-width:767px) {
+    .wrapper-two {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+
+.wrapper-two .course-card {
+    overflow: hidden;
+}
+
+.wrapper-two .course-card .cover {
+    max-width: 100%;
+    width: 100%;
+}
+
+.wrapper-two .course-card .instructor {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.wrapper-two .footer {
+    border-top: 1px solid #eee;
+}
+
+.wrapper-two .footer .course-info {
+    position: absolute;
+    top: -13.5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* End Courses Page */
 
 /* Start Switch Toggle*/
 
