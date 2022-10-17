@@ -1110,6 +1110,106 @@ ul {
 
 /* End Friends Page */
 
+/* Start Files Page */
+
+.files {
+    flex-wrap: wrap;
+}
+
+@media (max-width:767px) {
+    .files {
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+
+    .files .file-wrapper {
+        gap: 10px;
+    }
+}
+
+.files .file-wrapper {
+    flex-grow: 1;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+@media (max-width:1150px) {
+
+    .files {
+        flex-direction: column-reverse;
+    }
+
+    .files .file-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .files .file-wrapper .file {
+        flex-grow: 1;
+    }
+}
+
+.file-wrapper .file .header img {
+    width: 60px;
+}
+
+.file-wrapper .file .footer {
+    border-top: 1px solid #eee;
+}
+
+.file-wrapper .file svg {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.files .file-stat {
+    min-width: 250px;
+    max-height: 450px;
+}
+
+.file-stat ul li {
+    border: 1px solid #eee;
+}
+
+.file-stat ul li .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.file-stat ul li .icon.blue {
+    background: rgb(0 117 255 / 20%);
+}
+
+.file-stat ul li .icon.green {
+    background: rgb(34 197 94 / 20%);
+}
+
+.file-stat ul li .icon.red {
+    background: rgb(244 67 54 / 20%);
+}
+
+.file-stat ul li .icon.orange {
+    background: rgb(245 158 11 / 20%);
+}
+
+.file-stat ul li .info {
+    flex-grow: 1;
+}
+
+.file-stat button {
+    width: 90px;
+    height: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+
+
+/* End Files Page */
+
 /* Start Switch Toggle*/
 
 .toggle-checkbox {
