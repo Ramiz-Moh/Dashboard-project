@@ -1206,9 +1206,67 @@ ul {
     cursor: pointer;
 }
 
-
-
 /* End Files Page */
+
+/* Start Plans Page */
+
+.plans-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media (max-width:767px) {
+    .plans-wrapper {
+        grid-template-columns: minmax(300px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+
+.plan .header {
+    outline: 2px solid;
+    border: 3px solid white;
+}
+
+.plan .header.green {
+    background: var(--green-color);
+    outline-color: var(--green-color);
+}
+
+.plan .header.blue {
+    background: var(--blue-color);
+    outline-color: var(--blue-color);
+}
+
+.plan .header.orange {
+    background: var(--orange-color);
+    outline-color: var(--orange-color);
+}
+
+.plan .header span:last-of-type {
+    margin: 0 auto;
+}
+
+.plan .header span:last-of-type::before {
+    content: "$";
+    position: absolute;
+    top: -5px;
+    left: -15px;
+    transform: translateX(-38%);
+    font-size: 25px
+}
+
+.plan ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.plan button {
+    height: 30px;
+    cursor: pointer;
+}
+
+/* End Plans Page */
 
 /* Start Switch Toggle*/
 

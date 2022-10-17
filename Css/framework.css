@@ -500,6 +500,14 @@
     font-size: 25px;
 }
 
+.fs-30 {
+    font-size: 30px;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
 .fw-normal {
     font-weight: normal;
 }
